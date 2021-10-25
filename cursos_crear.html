@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Cursos</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="assets/img/imagen_01.png" alt="Logo Html5" width="100px" />
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Creación de curso nuevo</h1>
+      <fieldset>
+        <legend>DATOS BASICOS</legend>
+        <form action="" method="POST" autocomplete="off">
+
+          <label for="grupo">Seleccione el grupo de riesgo</label>
+          <select name="grupo" id="grupo">
+            <option value="1">Riesgo general</option>
+            <option value="2">Riesgo 1</option>
+            <option value="3">Riesgo 2</option>
+            <option value="4">Riesgo 3</option>
+          </select>
+          <br /><br />
+
+          <label for="codigo">Codigo</label><br />
+          <input
+            type="text"
+            id="codigo"
+            name="codigo"
+            placeholder="1"
+            tabindex="1"
+            size="25"
+            required
+          />
+          <br /><br />
+
+          <label for="curso">Nombre del curso</label><br />
+          <input
+            type="text"
+            id="curso"
+            name="curso"
+            placeholder="Ingrese el nombre del curso"
+            tabindex="2"
+            size="25"
+            required
+          />
+          <br /><br />
+
+          <label for="duración">Duracion</label><br />
+          <input
+            type="text"
+            id="duracion"
+            name="duracion"
+            placeholder="Ingrese la duracion"
+            tabindex="3"
+            size="25"
+            required
+          />
+          <br /><br />
+
+          <label for="fecha">Fecha inicio</label><br />
+          <input
+            type="datetime"
+            id="fecha"
+            name="fecha"
+            placeholder="Ingrese la fecha de inicio"
+            tabindex="4"
+            size="25"
+            required
+          />
+          <br /><br />
+
+          <button type="submit">Guardar</button>
+          <button type="reset">Cancelar</button>
+        </form>
+      </fieldset>
+    </section>
+  </body>
+</html>

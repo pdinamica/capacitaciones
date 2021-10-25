@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Cursos</title>
-</head>
-<body>
-    cursos
+  </head>
+  <body>
     <header>
-        
-        <section> <img src="imagenes/imagen_01.png" alt="Logo Html5" width="100px" /></section>
-        <nav>
-         <ul>
-             <li><a href="index.html">Inicio</a></li>
-             <li><a href="cursos.html">Cursos</a></li>
-             <li><a href="usuarios.html">Usuarios</a></li>
-             <li><a href="nosotros.html">Nosotros</a></li>
-             
-         </ul>   
-  
-        </nav>
-  
-        
-      </header>
-      <hr />
+      <section>
+        <img src="assets/img/imagen_01.png" alt="Logo Html5" width="100px" />
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Listado de cursos</h1>
+      <a href="cursos_crear.html"><button>Crear</button></a><br/><br/>
+      <table border="1" cellspacing="0" width="70%">
+          <thead>
+              <tr>
+                  <th width="5%">Codigo</th>
+                  <th width="35%">Nombre del curso</th>
+                  <th width="10%">Duracion</th>
+                  <th width="20%">Fecha inicio</th>
+                  <th width="10%">Grupo</th>
+                  <th width="20%">Opciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr align="center">
+                  <td>1</td>
+                  <td>Trabajo en altura</td>
+                  <td>40 horas</td>
+                  <td>Sep 20 de 2021</td>
+                  <td>Riesgo 1</td>
+                  <td><a href="usuario_editar.html">Editar</a> | <a href="#">Eliminar</a></td>
+              </tr>
+              <tr align="center">
+                  <td>2</td>
+                  <td>Primeros auxilios</td>
+                  <td>20 horas</td>
+                  <td>Agosto 15 de 2021</td>
+                  <td>Riesgo general</td>
+                  <td><a href="usuarios_editar.html">Editar</a> | <a href="#">Eliminar</a></td>
+              </tr>
+              <tr align="center">
+                  <td>3</td>
+                  <td>Manejo de sustancias químicas</td>
+                  <td>40 horas</td>
+                  <td>Noviembre 18 de 2021</td>
+                  <td>Riesgo 1</td>
+                  <td><a href="usuarios_editar.html">Editar</a> | <a href="#">Eliminar</a></td>
+              </tr>
+          </tbody>
+      </table>
+  </section>
+
+
+  <hr />
     <footer>
       <p>Mision TIC - UNAB</p>
       <p>2021</p>
     </footer>
-      
-</body>
+  </body>
 </html>
